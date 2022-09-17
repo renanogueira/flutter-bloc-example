@@ -1,0 +1,11 @@
+{
+    "[dart]": {
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
+        "source.fixAll": true
+      },
+    },
+    "dart.flutterSdkPath": "/Users/renannogueira/development/flutter"
+  }
+  
