@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_example/mangas/mangas.dart';
+
+import 'screens/trending_mangas_screen.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -12,7 +13,7 @@ class App extends StatelessWidget {
         primaryColor: Colors.blue,
       ),
       home: const Scaffold(
-        body: MangasPage(),
+        body: TrendingMangasScreen(),
       ),
     );
   }

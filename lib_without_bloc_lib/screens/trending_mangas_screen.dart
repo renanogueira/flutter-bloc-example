@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_example/blocs/trending_mangas_bloc.dart';
-import 'package:flutter_bloc_example/models/trending_mangas_model.dart';
-import 'package:flutter_bloc_example/widgets/manga_card_widget.dart';
+
+import '../blocs/trending_mangas_bloc.dart';
+import '../models/trending_mangas_model.dart';
+import '../widgets/manga_card_widget.dart';
 
 class TrendingMangasScreen extends StatefulWidget {
   const TrendingMangasScreen({Key? key}) : super(key: key);

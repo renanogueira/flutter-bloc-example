@@ -1,7 +1,9 @@
 import 'dart:async';
-import 'package:flutter_bloc_example/models/trending_mangas_model.dart';
-import 'package:http/http.dart' show Client;
 import 'dart:convert';
+
+import 'package:http/http.dart' show Client;
+
+import '../models/trending_mangas_model.dart';
 
 class TrendingMangasApi {
   Client client = Client();

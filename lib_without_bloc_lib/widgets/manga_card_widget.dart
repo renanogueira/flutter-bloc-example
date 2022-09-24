@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc_example/models/trending_mangas_model.dart';
+
+import '../models/trending_mangas_model.dart';
 
 class MangaCardWidget extends StatelessWidget {
   const MangaCardWidget({

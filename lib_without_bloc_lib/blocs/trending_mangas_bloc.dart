@@ -1,6 +1,7 @@
-import 'package:flutter_bloc_example/models/trending_mangas_model.dart';
-import 'package:flutter_bloc_example/repository/repository.dart';
 import 'package:rxdart/rxdart.dart';
+
+import '../models/trending_mangas_model.dart';
+import '../repository/repository.dart';
 
 class TrendingMangasBloc {
   final _repository = Repository();
