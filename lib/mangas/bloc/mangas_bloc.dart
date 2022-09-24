@@ -20,6 +20,10 @@ class MangasBloc extends Bloc<MangasEvent, MangasState> {
     try {
       if (state.status == MangasStatus.initial) {
         final mangas = await _fetchMangas();
+        mangas.sort(
+          (a, b) => b.attributes.averageRating!
+              .compareTo(a.attributes.averageRating!),
+        );
         return emit(
           state.copyWith(
             status: MangasStatus.success,

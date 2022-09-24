@@ -21,7 +21,7 @@ class MangasState extends Equatable {
 
   @override
   String toString() {
-    return '''MangaState { $status, posts: ${mangas.length} }''';
+    return '''MangaState { $status, mangas: ${mangas.length} }''';
   }
 
   @override
