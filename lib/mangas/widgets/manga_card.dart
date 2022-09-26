@@ -21,17 +21,15 @@ class MangaCard extends StatelessWidget {
             height: 200.0,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: NetworkImage(
-                  _manga.attributes.posterImage?.large.toString() ?? '',
-                ),
+                image: NetworkImage(_manga.attributes.posterImage.large),
                 fit: BoxFit.cover,
               ),
             ),
           ),
           ListTile(
-            title: Text(_manga.attributes.canonicalTitle ?? ''),
+            title: Text(_manga.attributes.canonicalTitle),
             subtitle: Text(
-              'Avaliação: ${_manga.attributes.averageRating ?? 'N/A'}',
+              'Avaliação: ${_manga.attributes.averageRating}',
               style: TextStyle(color: Colors.black.withOpacity(0.6)),
             ),
           ),

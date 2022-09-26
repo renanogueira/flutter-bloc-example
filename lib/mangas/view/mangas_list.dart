@@ -13,7 +13,7 @@ class MangasList extends StatelessWidget {
           case MangasStatus.initial:
             return const Center(child: CircularProgressIndicator());
           case MangasStatus.failure:
-            return const Center(child: Text('failed to fetch mangas'));
+            return Center(child: Text(state.error));
           case MangasStatus.success:
             return ListView.builder(
               itemBuilder: (BuildContext context, index) {

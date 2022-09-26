@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_example/mangas/bloc/mangas_bloc.dart';
-import 'package:http/http.dart' as http;
 
 import 'mangas_list.dart';
 
@@ -15,8 +14,7 @@ class MangasPage extends StatelessWidget {
         title: const Text('Mangás populares'),
       ),
       body: BlocProvider(
-        create: (_) =>
-            MangasBloc(httpClient: http.Client())..add(MangasFetched()),
+        create: (_) => MangasBloc()..add(MangasFetched()),
         child: const MangasList(),
       ),
     );

@@ -11,9 +11,7 @@ class App extends StatelessWidget {
         useMaterial3: true,
         primaryColor: Colors.blue,
       ),
-      home: const Scaffold(
-        body: MangasPage(),
-      ),
+      home: const MangasPage(),
     );
   }
 }
